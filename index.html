@@ -80,6 +80,10 @@
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link" href="#howToEnableCloudFirestore">How to enable cloud firestore</a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a class="nav-link" href="#howToChangeAppName">How to change application name</a>
                             </li>
 
@@ -109,7 +113,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#howToChangeIntroSlideImages">How to change intro slider images</a>
+                                <a class="nav-link" href="#howToChangeIntroSlideImages">How to set Domain URL</a>
                             </li>
 
                             <li class="nav-item">
@@ -172,9 +176,9 @@
                                 </h4>
                                 <ol>
                                     <li>
-                                        Unzip the downloaded code. After unzipping you will have Elite Quiz - Web Code zip folder.
+                                        Unzip the downloaded code. After unzipping you will have Elite Quiz - Web Code folder.
                                         <br> 
-                                        Unzip Elite Quiz - Web Code folder and open it in Visual Studio Code.
+                                        Open it in Visual Studio Code.
                                     </li>
                                     <li>
                                         Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm i</b>.
@@ -209,11 +213,12 @@
                                         <img src="images/web/addWeb2.png" alt="Elite Quiz" /><br>
                                     </li>
                                     <li>
-                                        Copy this Highlited Code and paste in YOUR_APP_FOLDER/src/firebase.js File
+                                        Copy this Highlited Code and paste in YOUR_APP_FOLDER/src/utils/config.js File
                                         <img src="images/web/addWeb3.png" alt="Elite Quiz" /><br>
                                     </li>
                                     <li>
                                         Replace Firebase credentials Here
+                                        This credentials should match with the credentials that you have set in admin panel. Otherwise it will not work properly.
                                         <img src="images/web/addWeb4.png" alt="Elite Quiz" /><br>
                                     </li>
                                     <li>You have successfully connected your Web application to your firebase project.</li>
@@ -418,13 +423,12 @@
 
                             <section id="howToChangeIntroSlideImages">
                                 <h4>
-                                    <li>How to change intro slider images</li>
+                                    <li>How set the Domain URL</li>
                                 </h4>
                                 <ol>
                                     <li>
-                                        Go to public > images > introslider folder and replace your intro slide images with the shown images.It is recommended
-                                        to follow same naming convention shown in below image
-                                        <img src="images/web/changeIntroSlider.png" alt="Elite Quiz" />
+                                        Go to package.json file and add your domain url in homepage variable. for ex, https://elitequiz.wrteam.in/
+                                        <img src="images/web/domainUrl.png" alt="Elite Quiz" />
                                     </li>
                                 </ol>
                                 <hr>
@@ -455,9 +459,9 @@
                     <section id="support">
                         <h3>Support</h3>
                         <p>Its our pleasure to serve our service and support. please contact our support team.</p>
-                        <p>Head of Customer Support : Priyansh Parmar <a
-                                href="https://join.skype.com/invite/E228Z6F4s3gB" target="_blank"
-                                style="color:#3c55d1">Skype Name : Priyansh Parmar</a></p>
+                        <p>Head of Customer Support : Sagar Gor <a
+                                href="https://join.skype.com/invite/ur5Wrt8RIAxJ" target="_blank"
+                                style="color:#3c55d1">Skype Name : Sagar Gor</a></p>
                         <p>To help our customers, we constantly be in touch with every customer if they need any
                             assistance regarding our product.
                             We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) –
