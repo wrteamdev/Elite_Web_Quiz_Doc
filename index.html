@@ -312,12 +312,25 @@
                                     <li>How to change database url and other backend settings</li>
                                 </h4>
                                 <ol>
-                                    <li>
-                                        Go to src > utils > config.js file and make changes shown in below image.
-                                        <br />
-                                        add your admin panel url in apiUrl param.
-                                        <img src="images/web/addAPIConfiguration.png" alt="Elite Quiz" />
+                                    <li>Go to src > utils > config.js file and make changes shown in below image.</li>
+                                    <li>To Connect your Elite Quiz Web version you need to change two variables.
+                                        <br>
+                                            1.apiUrl <br>
+                                            2.apiAccessKey <br>
                                     </li>
+                                    <li>
+                                        <h5 class="mb-0">apiUrl : </h5>
+                                        URL should be the admin panel url with the suffix of <b>api/</b> value. <br>
+                                        For example, your Admin panel url is <a href="https://eliteweb.wrteam.in/">https://eliteweb.wrteam.in/</a><br>
+                                        Then set <a href="https://eliteweb.wrteam.in/">https://eliteweb.wrteam.in/<b>api/</b></a> as your <b>apiUrl</b> variable.
+                                    </li>
+                                    <li>
+                                        <h5 class="mb-0">apiAccessKey : </h5>
+                                        apiAccessKey should be the same that you have set in your Admin panel source code for API access.<br>
+                                        In case if you haven't changed the apiAccessKey in Admin panel source code then don't change your apiAccessKey here also.
+                                    </li>
+
+                                    <img src="images/web/addAPIConfiguration.png" alt="Elite Quiz" class="mt-3" />
                                 </ol>
                                 <hr>
                             </section>
