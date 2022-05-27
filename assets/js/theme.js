@@ -1,8 +1,9 @@
 /*
 ================================================================
-* Template:  	 iDocs - One Page Documentation HTML Template
-* Written by: 	 Harnish Design - (http://www.harnishdesign.net)
-* Description:   Main Custom Script File
+   Template Name: One Page Documentation HTML Template
+   Author: WRTeam
+   Theme: Elite-Quiz-Web
+   File Description : Main css file of the template
 ================================================================
 */
 
@@ -26,7 +27,7 @@ $('.primary-menu ul.navbar-nav li.dropdown, .login-signup ul.navbar-nav li.dropd
 	if ($(window).width() > 991) {
 		$(this).find('> .dropdown-menu').stop().slideDown('fast');
 		$(this).bind('mouseleave', function() {
-		$(this).find('> .dropdown-menu').stop().css('display', 'none'); 
+		$(this).find('> .dropdown-menu').stop().css('display', 'none');
 		});
 	}
 });

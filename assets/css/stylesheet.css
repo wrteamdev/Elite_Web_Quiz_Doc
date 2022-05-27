@@ -1,11 +1,10 @@
 /*===========================================================
 
-   Template Name: iDocs - One Page Documentation HTML Template
-   Author: Harnish Design
-   Template URL: http://demo.harnishdesign.net/html/idocs
-   Author URL: https://themeforest.net/user/harnishdesign
+   Template Name: One Page Documentation HTML Template
+   Author: WRTeam
+   Theme: Elite-Quiz-Web
    File Description : Main css file of the template
-        
+
 =================================================
   Table of Contents
 =================================================
@@ -33,7 +32,7 @@
 
 =======================================================*/
 /* =================================== */
-/*  1. Basic Style 
+/*  1. Basic Style
 /* =================================== */
 body, html {
     height: 100%;
@@ -2964,6 +2963,10 @@ section img{
     width: 100%;
 }
 
-text-theme{
-    color: #F87758; 
+.text-theme{
+    color: #F87758;
+}
+
+.ul_area{
+    list-style-type: none;
 }
