@@ -160,6 +160,12 @@
                     <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
                     <li class="nav-item"><a href="#rating" class="nav-link">Your Feedback</a></li>
                     <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#common_errors">Common Error</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#admin_error">Admin Panel</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#web_error">Web Issue</a></li> -->
+                        </ul>
+                    </li>
                 </ul>
             </div>
 
@@ -190,7 +196,7 @@
                                     <br/><span>ii. database username</span>
                                     <br/><span>iii. database password</span>
                                 </li>
-                                <li>Upload the source code you have downloaded from CodeCanyon and unzip it.</li>
+                                <li>Upload the source code you have downloaded from CodeCanyon and unzip it.<br/>Note :- Exract your zip file and under that you find php code folder under that folder you will find php_code.zip file upload that file in your server, <br/> extract that file in your server<br/>Note :- .htaccess file is necessary , check that it exists , if not on the hidden file option</li>
                                 <li>Now navigate to the url where your project is located.<br/>
                                     ex. mydomain.com or subdomain.mydomain.com
                                 </li>
@@ -699,6 +705,27 @@
                         <p>Thank you very much.</p>
                     </section>
                     <hr class="divider">
+
+                    <section id="common_errors">
+                        <section id="admin_error">
+                            <h4>Admin Panel Setup</h4>
+
+                            <p>Issue 1</p>
+                            <ol>
+                                <img src="images/error/ob_start()1.png" alt="Elite Quiz" />
+                            </ol>
+                            <ol>
+                                <img src="images/error/ob_start()2.png" alt="Elite Quiz" />
+                            </ol>
+                            <h4>Solution</h4>
+                            <ol>
+                                <li>Go to Admin panel's code root files -&gt; index.php and write: <code>ob_start();</code> in new line after <code>&lt;?php</code></li><br/>
+                                <img src="images/error/ob_start.png" alt="Elite Quiz" />
+                            </ol>
+
+                            <hr>
+                        </section>
+                    </section>
 
                 </div>
             </div>
