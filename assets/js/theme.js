@@ -127,5 +127,6 @@ $('#back-to-top').on("click", function() {
 	return false;
 });
 
+$(".number").counterUp({ time: 3000 });
 
 })(jQuery)
