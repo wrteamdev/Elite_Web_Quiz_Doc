@@ -32,7 +32,7 @@ body {
   .main {
     height: auto;
   }
-  .contact_us{
+  .contact_us {
     margin-bottom: 100px;
   }
 }
@@ -306,6 +306,8 @@ nav ul li a:hover {
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 0;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .box .item .counter {
