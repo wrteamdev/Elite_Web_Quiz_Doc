@@ -28,9 +28,12 @@ body {
   position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .main {
     height: auto;
+  }
+  .contact_us{
+    margin-bottom: 100px;
   }
 }
 
