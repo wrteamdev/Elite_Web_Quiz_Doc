@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212428;
+  color: #d7d5d5;
+}
+
+.changelog {
+  width: 1000px;
+  margin: 50px auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+.toggle,
+.content {
+  font-family: "Poppins", sans-serif;
+}
+
+.toggle {
+  width: 100%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.content {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  font-weight: 400;
+}
+
+.content ul li {
+  margin: 20px auto;
+}
+
+.green {
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.improve{
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.fix{
+  background-color: rgb(255, 2, 2);
+  border-radius: 5px;
+  padding: 10px;
+}
