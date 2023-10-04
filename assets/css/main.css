@@ -287,6 +287,7 @@ nav ul li a:hover {
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 .box .item .inner {
@@ -304,6 +305,7 @@ nav ul li a:hover {
 .box .item p {
   color: #fff;
   text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .box .item .counter {
