@@ -24,8 +24,8 @@ body {
 }
 
 .main {
-  height: 100vh;
   position: relative;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 1199px) {
