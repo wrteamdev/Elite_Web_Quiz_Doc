@@ -18,17 +18,6 @@
 
 <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- Preloader End -->
-
     <!-- Document Wrapper
         =============================== -->
     <div id="main-wrapper">
@@ -190,15 +179,15 @@
                             <section id="webinstallation">
                                 <h2>Installation of Web Setup Video</h2>
                                 <ol>
-                                    <li>
+                                    <!-- <li>
                                         Configure In PC : <a href="https://www.youtube.com/watch?v=LRV5ZMxJhuc">Video Link</a>
-                                    </li>
+                                    </li> -->
                                     <li>
                                         Configure of firebase : <a href="https://www.youtube.com/watch?v=adrnST-IrgU">Video Link</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         Upload To Server Example : <a href="https://www.youtube.com/watch?v=v1tbGtrndgI">Video Link</a>
-                                    </li>
+                                    </li> -->
                                 </ol>
                             </section>
                             <br />
@@ -228,8 +217,8 @@
                                 </h4>
                                 <ol>
                                     <li>Go to Main Folder -> .env file open it
-                                         <b>Base URL </b></br>
-                                         <b>(note:- do not change end of <code>/api/</code> like set your admin panel url like this <code>https://www.example.com/api/</code>)</b>
+                                         </br>
+                                         <b>like set your admin panel url like this <code>https://www.example.com</code></b>
                                         <img src="../images/web/env.png" alt="Elite Quiz" />
                                     </li>
                                 </ol>
@@ -249,13 +238,13 @@
                                         Open it in Visual Studio Code.
                                     </li>
                                     <li>
-                                        Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm i</b>
+                                        Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm i --force</b>
                                         <br>
                                         This will take some time to download a few Packages so wait for a few minutes.
                                     </li>
-                                    <li> After <b>npm i</b> finishes run this command --> <b>npm start</b>.
+                                    <li> After <b>npm i --force</b> finishes run this command --> <b>npm run dev</b>.
                                         <br>
-                                        This Command will Start the development mode.Check If everything is working fine then your are good to go ahead.
+                                        This Command will Start the development mode. Check If everything is working fine then your are good to go ahead.
 
                                     </li>
                                 </ol>
@@ -383,8 +372,18 @@
                                     <br>
                                     <h4>Seo meta tags</h4>
 
-                                    <li>Go to public -> index.html (Note:- make sure check whatever you set favicon in admin panel set here same with .png,.svg etc)
+                                    <li>Go to .env file 
                                         <img src="../images/web/indexhtml.png" alt="Elite Quiz" />
+                                    </li>
+
+                                </ol>
+
+                                <ol>
+                                    <br>
+                                    <h5>How to change favicon icon Note:-<code>Please set your favicon icon as favicon.ico name and format is only ico set</code> and here its link to convert image to ico <a href="https://www.favicon-generator.org/" target="_blank">favicon generator</a></h5>
+
+                                    <li>Go to public folder -> favicon.ico
+                                        <img src="../images/web/favicon.png" alt="Elite Quiz" />
                                     </li>
 
                                 </ol>
@@ -404,8 +403,8 @@
                                         below image.
                                         Get your language code from here
                                         https://developers.google.com/admin-sdk/directory/v1/languages.
-                                        <br />Make sure your language code is avaialble in
-                                        https://developers.google.com/admin-sdk/directory/v1/languages.
+                                        <br /><code>Make sure your language code is avaialble in
+                                        https://developers.google.com/admin-sdk/directory/v1/languages.</code>
                                         <img src="../images/web/addLanguage.png" alt="Elite Quiz" />
                                     </li>
                                     <li>
@@ -442,13 +441,13 @@
                                         src > utils > config.js
                                         Get your language code from here
                                         https://developers.google.com/admin-sdk/directory/v1/languages.
-                                        Make sure your language code is avaialble in
+                                        <strong> Make sure your language code is avaialble in </strong>
                                         https://developers.google.com/admin-sdk/directory/v1/languages.
                                         <img src="../images/web/addNewLanguage.png" alt="Elite Quiz" />
                                     </li>
                                     <li>
                                         Create new file
-                                        in ../assets/languages/ with [language-code].json. Add all the labels from en.json
+                                        in src/locale/ with [language-code].json. Add all the labels from en.json
                                         and
                                         convert label values in your respective language
                                         <img src="../images/web/languageFiles.png" alt="Elite Quiz" />
@@ -468,7 +467,7 @@
                                 </h4>
                                 <ol>
                                     <li>
-                                        Add your colors in YOUR_APP_FOLDER/src/../assets/scss/common/_color.scss and do not change the color
+                                        Add your colors in YOUR_APP_FOLDER/public/css/style.css and do not change the color
                                         variables name
                                         <img src="../images/web/changeColors.png" alt="Elite Quiz" />
                                     </li>
@@ -483,7 +482,8 @@
                                 </h4>
                                 <ol>
                                     <li>
-                                        Go to YOUR_APP_FOLDER/src/../assets/scss/common/_font-size.scss and add your font as shown in image
+                                        Go to YOUR_APP_FOLDER/public/css/style.css and add your font as shown in image
+                                        <p>here you get font <a href="https://fonts.google.com/" target="_blank">google font</a></p>
                                         <img src="../images/web/changeFont.png" alt="Elite Quiz" />
                                     </li>
                                 </ol>
@@ -535,7 +535,7 @@
                                 </h4>
                                 <ol>
                                     <li>
-                                        Go to package.json file and add your domain url in homepage variable. for ex, https://elitequiz.wrteam.in/
+                                        Go to .env file 
                                         <img src="../images/web/domainUrl.png" alt="Elite Quiz" />
                                     </li>
                                 </ol>
@@ -550,14 +550,14 @@
                                 <ol>
                                     <li>After all the changes you are ready to deploy your Web applicaiton on Live Server.</li>
                                     <li>
-                                        Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm run build</b>
+                                        Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux, and for MacOS <b>CMD+J</b> and execute the command --> <b>npm run export</b>
                                         <br>This will take few seconds to build the live and the optimized version of the web application.
                                     </li>
                                     <li>
-                                        After the process completion go to web`s code root files -> build folder and upload this files on your live server.<br />
-                                        (only upload <b>build </b>folder's files on server do not upload any other file on server)
+                                        After the process completion go to web`s code root files -> out folder and upload this files on your live server.<br />
+                                        (only upload <b>out </b>folder's files on server do not upload any other file on server)
                                     </li>
-                                    <li>If you are facing any deployment related problems you can follow the official document : <a href="https://create-react-app.dev/docs/deployment/" target="_blank">React App Deployment</a></li>
+                                    <li>If you are facing any deployment related problems you can follow the official document : <a href="https://nextjs.org/docs/pages/building-your-application/deploying" target="_blank">Next Js Web Deployment</a></li>
                                 </ol>
                                 <hr>
                             </section>
@@ -616,11 +616,11 @@
                                     <img src="../images/web/adsense.png" alt="Elite Quiz" />
                                     <li> click on Let's Go button</li>
                                         <img src="../images/web/adsensesite.png" alt="Elite Quiz" />
-                                    <li> Copy this script code and paste to your public >  index.html</li>
+                                    <li> Copy this script code and paste to your src -> pages -> _document.js</li>
                                     <img src="../images/web/first_verify.png" alt="Elite Quiz" />
                                     <img src="../images/web/scripthtml.png" alt="Elite Quiz" />
                                     <li>
-                                        after script add you need to run command for build folder <b>npm run build</b> and upload to your server. and after click on verify button in google adsense
+                                        after script add you need to run command for build folder <b>npm run export</b> and upload to your server. and after click on verify button in google adsense
 
                                         <img src="../images/web/verify.png" alt="Elite Quiz" />
                                     </li>
